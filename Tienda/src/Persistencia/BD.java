@@ -68,7 +68,7 @@ public class BD {
       
             int Valor;
             
-            String ComandoSQL="SELECT Valor FROM producto where Codigo = '" +cod;
+            String ComandoSQL="SELECT * FROM producto where Codigo = " + cod;
             
                     //miInventario.append("Referencia"+"\t"+"Nombre"+"\t"+"Cantidad"+"\t"+"Precio"+"\n");
             try{
@@ -79,7 +79,7 @@ public class BD {
                     while(resultado.next())
                     {
                 
-                        Valor = resultado.getInt(1);
+                        Valor = resultado.getInt(2);
                         System.out.println("El valor es:  " + Valor + "\n");
                     }
                     // Cerramos la interfaz Statement

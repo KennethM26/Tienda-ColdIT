@@ -29,7 +29,7 @@ public class Tienda {
          //BaseDatos.Actualizar_prod(2, "platano", 1500);listo
         // Realizar una consulta de los proveedores
         BaseDatos.Consultar();
-        BaseDatos.ConsultarProd(2);
+        BaseDatos.ConsultarProd(3);
         
         //BaseDatos.eliminar(1);//listo
        
